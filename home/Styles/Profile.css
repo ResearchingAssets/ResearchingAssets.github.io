@@ -197,7 +197,7 @@ p {
         width: 80%
     }
 
-    section{
+    .name-design , .about , .projects , .socials{
         height: 100vh;
         display: flex;
         justify-content: center;
