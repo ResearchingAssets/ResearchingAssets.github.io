@@ -203,13 +203,21 @@ p {
 
   @media only screen and (max-width: 768px) {
     /* Add styles here for mobile devices */
+    .header {
+        padding: 10px 20px;
+        flex-direction: column;
+    }
+
     .Name {
       font-size: 150%;
     }
-  
-    .name-design {
-      font-size: 400%;
+
+    .navbar a,
+    .navbar #change-icon {
+        margin-left: 1rem;
+        font-size: 100%;
     }
+  
   
     .myself {
       font-size: 16px;
