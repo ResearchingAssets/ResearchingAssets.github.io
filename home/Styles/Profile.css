@@ -167,3 +167,24 @@ p {
 ::-webkit-scrollbar {
     display: none;
 }
+ .mobile {
+    /* Adjust the layout for mobile devices */
+    .header {
+      padding: 10px 20px;
+    }
+    .Hello {
+      height: 80vh;
+    }
+    .name-design {
+      font-size: 500%;
+    }
+    .projects, .socials {
+      flex-direction: column;
+    }
+    .projects-name, .socials-name {
+      font-size: 100%;
+    }
+    .social {
+      font-size: 100%;
+    }
+  }
