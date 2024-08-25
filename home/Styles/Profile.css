@@ -164,11 +164,96 @@ p {
     0%, 100%{background-position: 0% 50%;}
     50%{background-position: 100% 50%;}
 }
-::-webkit-scrollbar {
-    display: none;
+
+ ::-webkit-scrollbar {
+        display: none;
+ }
+
+ @media (width<=600px) {
+    .header{
+        padding: 10px 20px;
+        flex-direction: column;
+    }
+
+    .navbar a, .navbar #change-icon {
+        font-size: 100%;
+        margin-left: 1rem;
+    }
+
+    .name-design #name-first{
+        font-size: 55%;
+    }
+
+    .about .name{
+        font-size: 250%;
+    }
+
+    .about .myself{
+        font-size: 100%;
+    }
+
+    .social{
+        font-size: 100%;
+    }
 }
 
-/* Optional: add a mobile-specific background color or image */
-.mobile .body-container {
-  background-color: #f7f7f7; /* or any other color/image you prefer */
+@media (600px <=width <=768px) {
+    .header{
+        padding: 10px 20px;
+        flex-direction: column;
+    }
+
+    .navbar a, .navbar #change-icon {
+        font-size: 125%;
+        margin-left: 1.5rem;
+    }
+
+    .name-design #name-first{
+        font-size: 80%;
+    }
+
+    .about .name{
+        font-size: 275%;
+    }
+
+    .about .myself{
+        font-size: 125%;
+    }
+
+    .social{
+        font-size: 125%;
+    }
+}
+
+@media (768px <=width <=1024px){
+    .header{
+        padding: 10px 20px;
+    }
+
+    .navbar a, .navbar #change-icon {
+        font-size: 150%;
+        margin-left: 2rem;
+    }
+
+    .name-design #name-first{
+        font-size: 105%;
+    }
+
+    .about .name{
+        font-size: 300%;
+    }
+
+    .about .myself{
+        font-size: 150%;
+    }
+
+    .social{
+        font-size: 150%;
+    }
+}
+
+@media (prefers-reduced-motion) {
+    * {
+        transition: none;
+    }
 }
