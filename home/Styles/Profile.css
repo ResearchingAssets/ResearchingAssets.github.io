@@ -164,3 +164,48 @@ p {
     0%, 100%{background-position: 0% 50%;}
     50%{background-position: 100% 50%;}
 }
+
+/* Media Query for Mobile */
+@media (max-width: 768px) {
+    .header {
+        padding: 10px 20px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar a, .navbar #change-icon {
+        font-size: 120%;
+        margin-left: 1rem;
+    }
+
+    .Name {
+        font-size: 150%;
+    }
+
+    .name-design {
+        font-size: 600%;
+    }
+
+    .about .name {
+        font-size: 250%;
+    }
+
+    .projects-name, .socials-name {
+        font-size: 120%;
+    }
+
+    .social {
+        font-size: 120%;
+    }
+
+    .Hello {
+        padding: 0 10px;
+        height: auto;
+    }
+
+    .lines div {
+        width: 2px;
+        top: 10dvh;
+        bottom: 10dvh;
+    }
+}
