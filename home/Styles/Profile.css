@@ -1,0 +1,245 @@
+*{
+    scroll-behavior: smooth;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+section{
+    height: 100dvh;
+    color: var(--fg-color);
+}
+.body-container{
+    background-color: var(--bg-color);
+    color: var(--fg-color);
+    transition: all 1s ease-in-out;
+}
+div{
+    display: block;
+    unicode-bidi: isolate;
+}
+.lines .left{
+    left: 2%;
+    animation: var(--acc-gradient-anim);
+    background: var(--acc-gradient);
+    background-size: 1000%;
+}
+.lines .right{
+    right: 2%;
+    animation: var(--acc-gradient-anim);
+    background: var(--acc-gradient);
+    background-size: 1000%;
+}
+.lines div{
+    position: fixed;
+    top: 20dvh;
+    bottom: 20dvh;
+    width: 3px;
+    opacity: var(--lines-opacity);
+    transition: all 0.5s ease-in-out;
+}
+nav {
+    display: block;
+    unicode-bidi: isolate;
+}
+.navbar a, .navbar #change-icon{
+    text-decoration: none;
+    color: var(--fg-color);
+    font-size: 150%;
+    font-weight: 550;
+    margin-left: 2rem;
+    transition: 0.3s;
+}
+#change-icon{
+    cursor: pointer;
+}
+.header{
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+    flex-direction: row;
+}
+.Name{
+    text-decoration: none;
+    color: var(--fg-color);
+    font-size: 200%;
+    font-weight: 600;
+}
+
+  .name-design, .Hello, .projects, .socials {
+    transition: opacity 0.5s ease-in-out;
+  }
+  .Hello{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100dvh;
+    text-align: center;
+  }
+  .about .name{
+    font-size: 400%;
+    transition: none;
+  }
+  .colored-name{
+    background: var(--acc-gradient);
+    background-size: 250%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: var(--acc-gradient-anim);
+}
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.myself{
+    font-size: 20px;
+}
+.name-design{
+    font-weight: 600;
+    font-size: 1000%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+#name-first{
+    background: var(--name-gradient);
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-size: 250%;
+    -webkit-text-fill-color: transparent;
+    animation: var(--acc-gradient-anim);
+}
+.projects, .socials{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.projects-name, .socials-name{
+    color: var(--fg-color);
+    font-size: 150%;
+    font-weight: 600;
+}
+.social{
+    background: var(--name-gradient);
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-size: 250%;
+    -webkit-text-fill-color: transparent;
+    animation: var(--acc-gradient-anim);
+    font-size: 150%;
+}
+:root{
+    --bg-color: #1a1a1a; /* Initial background color */
+    --fg-color: #fff; /* Initial foreground color */
+    --light-bg-color: #fff;
+    --light-fg-color: #1a1a1a;
+    --dark-bg-color: #1a1a1a;
+    --dark-fg-color: #fff;
+    --lines-opacity: 0.3;
+    --purple: #772df7;
+    --pink: #f15d85;
+    --orange: #f79926;
+    --green: #65c06f;
+    --blue: #6f92e2;
+    --name-gradient: linear-gradient(45deg, var(--blue) 30%, var(--pink), var(--purple) 80%);
+    --acc-gradient: linear-gradient(45deg, var(--orange) 30%, var(--pink), var(--purple) 70%);
+    --acc-gradient-anim: text-shine 10s infinite ease-in-out;
+    --tri-gradient: linear-gradient(90deg, var(--orange) 30%, var(--fg-color) 50%, var(--green) 100%);
+}
+@keyframes text-shine{
+    0%, 100%{background-position: 0% 50%;}
+    50%{background-position: 100% 50%;}
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    /* Tablet styles */
+  
+    .Name {
+      font-size: 180%;
+    }
+  
+    .name-design {
+      font-size: 600%;
+    }
+  
+    .myself {
+      font-size: 18px;
+    }
+  
+    .projects-name, .socials-name {
+      font-size: 140%;
+    }
+  
+    .social {
+      font-size: 140%;
+    }
+  
+    .header {
+      padding: 15px 30px;
+    }
+  
+    .Hello {
+      height: 100vh;
+    }
+  
+    .lines div {
+      width: 2.5px;
+    }
+  }
+
+
+  @media only screen and (max-width: 768px) {
+    /* Add styles here for mobile devices */
+    .Name {
+      font-size: 150%;
+    }
+  
+    .name-design {
+      font-size: 400%;
+    }
+  
+    .myself {
+      font-size: 16px;
+    }
+  
+    .projects-name, .socials-name {
+      font-size: 120%;
+    }
+  
+    .social {
+      font-size: 120%;
+    }
+  
+    .header {
+      padding: 10px 20px;
+    }
+  
+    .Hello {
+      height: 100vh;
+    }
+  
+    .lines div {
+      width: 2px;
+    }
+  }
+
+@media (1200px<=width<=1200px) {}
+
+@media (prefers-reduced-motion) {
+    * {
+        transition: none;
+    }
+}
