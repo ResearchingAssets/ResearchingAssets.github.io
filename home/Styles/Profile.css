@@ -6,7 +6,7 @@
     font-family: 'Poppins';
 }
 section{
-    height: 90dvh;
+    height: 100dvh;
     color: var(--fg-color);
 }
 .body-container{
