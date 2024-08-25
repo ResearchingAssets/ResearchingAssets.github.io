@@ -117,26 +117,3 @@ projectLink.forEach(link => {
     });
   });
 });
-
- // Get the width of the screen
-const screenWidth = window.innerWidth;
-
-// Define the breakpoint for mobile devices
-const mobileBreakpoint = 768; // adjust this value according to your needs
-
-// Add an event listener to the window resize event
-window.addEventListener('resize', () => {
-  // Check if the screen width is less than or equal to the mobile breakpoint
-  if (screenWidth <= mobileBreakpoint) {
-    // Adjust the layout for mobile devices
-    document.body.classList.add('mobile');
-  } else {
-    // Remove the mobile class when the screen width is greater than the breakpoint
-    document.body.classList.remove('mobile');
-  }
-});
-
-// Initial check on page load
-if (screenWidth <= mobileBreakpoint) {
-  document.body.classList.add('mobile');
-}
