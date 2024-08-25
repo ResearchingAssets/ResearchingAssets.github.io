@@ -167,3 +167,26 @@ p {
 ::-webkit-scrollbar {
     display: none;
 }
+@media only screen and (max-width: 768px) {
+  .header {
+    padding: 10px 20px;
+  }
+  .Name {
+    font-size: 150%;
+  }
+  .Hello {
+    font-size: 18px;
+  }
+  .lines div {
+    width: 2px;
+  }
+  .navbar {
+    /* Collapse navigation menu */
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .navbar a {
+    display: block;
+    margin: 10px 0;
+  }
+}
