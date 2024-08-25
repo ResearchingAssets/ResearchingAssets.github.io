@@ -2,15 +2,6 @@ const FirstElement = document.querySelector('.name-design');
 const SecondElement = document.querySelector('.Hello');
 const ThirdElement = document.querySelector('.projects');
 
-const rectFirst = FirstElement.getBoundingClientRect();
-const FirstHeight = rectFirst.height;
-
-const rectSecond = SecondElement.getBoundingClientRect();
-const SecondHeight = rectSecond.height;
-
-console.log('Height of the first section:', FirstHeight);
-console.log('Height of the second section:', SecondHeight);
-
 window.addEventListener('scroll', () => {
     const scrollPosition = window.scrollY;
   
