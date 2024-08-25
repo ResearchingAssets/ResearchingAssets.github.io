@@ -1,7 +1,6 @@
 const FirstElement = document.querySelector('.name-design');
 const SecondElement = document.querySelector('.Hello');
 const ThirdElement = document.querySelector('.projects');
-const FourthElement = document.querySelector('.socials');
 
 const rectFirst = FirstElement.getBoundingClientRect();
 const FirstHeight = rectFirst.height;
@@ -34,11 +33,6 @@ window.addEventListener('scroll', () => {
       ThirdElement.style.opacity = 1;
     }
 
-    if (scrollPosition < 1700) {
-      FourthElement.style.opacity = 0;
-    } else {
-      FourthElement.style.opacity = 1;
-    }
   });
 
   const rootElement = document.documentElement;
