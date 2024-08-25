@@ -167,24 +167,53 @@ p {
 ::-webkit-scrollbar {
     display: none;
 }
- .mobile {
-    /* Adjust the layout for mobile devices */
-    .header {
-      padding: 10px 20px;
-    }
-    .Hello {
-      height: 80vh;
-    }
-    .name-design {
-      font-size: 500%;
-    }
-    .projects, .socials {
-      flex-direction: column;
-    }
-    .projects-name, .socials-name {
-      font-size: 100%;
-    }
-    .social {
-      font-size: 100%;
-    }
+/* Mobile layout adjustments */
+.mobile {
+  /* Reduce header padding and font size */
+  .header {
+    padding: 10px 20px;
+    font-size: 80%;
   }
+
+  /* Adjust hero section height and font size */
+  .Hello {
+    height: 80vh;
+    font-size: 120%;
+  }
+
+  /* Reduce font size for name design */
+  .name-design {
+    font-size: 400%;
+  }
+
+  /* Adjust project and social section layout */
+  .projects, .socials {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Reduce font size for project and social names */
+  .projects-name, .socials-name {
+    font-size: 100%;
+  }
+
+  /* Adjust social icon font size */
+  .social {
+    font-size: 80%;
+  }
+
+  /* Add some breathing room between sections */
+  section {
+    margin-bottom: 20px;
+  }
+}
+
+/* Mobile-specific scrollbar styles */
+.mobile ::-webkit-scrollbar {
+  display: none;
+}
+
+/* Optional: add a mobile-specific background color or image */
+.mobile .body-container {
+  background-color: #f7f7f7; /* or any other color/image you prefer */
+}
