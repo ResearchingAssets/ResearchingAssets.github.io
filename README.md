@@ -1,1 +1,1 @@
-https://researchingassets.is-a.dev/home/#
+https://researchingassets.is-a.dev
