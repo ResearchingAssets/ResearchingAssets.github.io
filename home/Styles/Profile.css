@@ -251,9 +251,3 @@ p {
         font-size: 150%;
     }
 }
-
-@media (prefers-reduced-motion) {
-    * {
-        transition: none;
-    }
-}
