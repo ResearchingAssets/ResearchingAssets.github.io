@@ -173,6 +173,7 @@ p {
   .header {
     padding: 10px 20px;
     font-size: 80%;
+    flex-direction: column;
   }
 
   /* Adjust hero section height and font size */
