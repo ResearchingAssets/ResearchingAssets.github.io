@@ -168,25 +168,33 @@ p {
     display: none;
 }
 @media only screen and (max-width: 768px) {
-  .header {
-    padding: 10px 20px;
-  }
-  .Name {
-    font-size: 150%;
-  }
-  .Hello {
-    font-size: 18px;
-  }
-  .lines div {
-    width: 2px;
-  }
-  .navbar {
-    /* Collapse navigation menu */
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  .navbar a {
-    display: block;
-    margin: 10px 0;
-  }
+     .header {
+        padding: 10px 20px;
+        flex-direction: column;
+    }
+
+
+      .Name {
+        font-size: 150%;
+      }
+
+    .name-design #name-first{
+        font-size: 350%;
+    }
+    
+    .navbar a,
+    .navbar #change-icon {
+        margin-left: 1rem;
+        font-size: 100%;
+    }
+
+    .about .name{
+        font-size: 250%;
+    }
+
+    .about .myself{
+        font-size: 80%;
+        width: 80%
+    }
+  
 }
