@@ -134,5 +134,3 @@ function hoverOnQuote(){
 function dishoverOnQuote(){
   show.style.opacity = 0;
 }
-
-
