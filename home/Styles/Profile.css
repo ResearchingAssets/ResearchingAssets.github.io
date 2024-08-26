@@ -72,7 +72,7 @@ nav {
     font-weight: 600;
 }
 
-  .name-design, .Hello, .projects, .socials {
+  .name-design, .Hello, .projects, .socials, .quote{
     transition: opacity 0.5s ease-in-out;
   }
   .Hello{
@@ -164,7 +164,28 @@ p {
     0%, 100%{background-position: 0% 50%;}
     50%{background-position: 100% 50%;}
 }
+.quote{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.quoteInnovation{
+    font-size: 225%;
 
+}
+.Description{
+    font-size: 150%;
+    margin-left: 15rem;
+    margin-right: 15rem;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+.India{
+    background: var(--tri-gradient);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
  ::-webkit-scrollbar {
         display: none;
  }
@@ -176,12 +197,23 @@ p {
     }
 
     .navbar a, .navbar #change-icon {
-        font-size: 100%;
-        margin-left: 1rem;
+        font-size: 90%;
+        margin-left: 0.5rem;
     }
 
     .name-design #name-first{
         font-size: 55%;
+    }
+
+    .quoteInnovation{
+        font-size: 150%;
+        max-width: 80vw;
+    }
+
+    .Description{
+        font-size: 75%;
+        margin-left: 2rem;
+        margin-right: 2rem;
     }
 
     .about .name{
@@ -192,8 +224,8 @@ p {
         font-size: 100%;
     }
 
-    .social{
-        font-size: 100%;
+    .socials{
+        font-size: 75%;
     }
 }
 
@@ -204,7 +236,7 @@ p {
     }
 
     .navbar a, .navbar #change-icon {
-        font-size: 125%;
+        font-size: 115%;
         margin-left: 1.5rem;
     }
 
@@ -216,12 +248,23 @@ p {
         font-size: 275%;
     }
 
+    .quoteInnovation{
+        font-size: 175%;
+        max-width: 80vw;
+    }
+
+    .Description{
+        font-size: 100%;
+        margin-left: 2.5rem;
+        margin-right: 2.5rem;
+    }
+
     .about .myself{
         font-size: 125%;
     }
 
-    .social{
-        font-size: 125%;
+    .socials{
+        font-size: 100%;
     }
 }
 
@@ -231,7 +274,7 @@ p {
     }
 
     .navbar a, .navbar #change-icon {
-        font-size: 150%;
+        font-size: 135%;
         margin-left: 2rem;
     }
 
@@ -243,11 +286,28 @@ p {
         font-size: 300%;
     }
 
+    .quoteInnovation{
+        font-size: 200%;
+        max-width: 80vw;
+    }
+
+    .Description{
+        font-size: 125%;
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+
     .about .myself{
         font-size: 150%;
     }
 
-    .social{
-        font-size: 150%;
+    .socials{
+        font-size: 125%;
+    }
+}
+
+@media (prefers-reduced-motion) {
+    * {
+        transition: none;
     }
 }
