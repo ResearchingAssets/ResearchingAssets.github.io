@@ -3,15 +3,13 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      
+        
         <link rel="shortcut icon" href="https://www.apache.org/favicons/favicon-194x194.png">
-        <link rel="stylesheet" href="./Styles/Profile.css">
+        <link rel="stylesheet" href="Profile.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
         <title>ResearchingAssets</title>
-
-        <script defer src="./JS/Profile.js"></script>
     </head>
     <body class = "body-container">
         <div class="lines">
@@ -22,6 +20,7 @@
             <a href="#" class="Name">ResearchingAssets</a>
             <nav class="navbar">
                 <a href="#" class="about-link">About</a>
+                <a href="#" class="quote-link">Myself</a>
                 <a href="#" class="project-link">Projects</a>
                 <a href="#" class="socials-link">Socials</a>
                 <span id="change-icon" onclick="modeChange()">
@@ -47,6 +46,14 @@
                 </div>
             </span>
         </section>
+        <section class="quote">
+            <span class="quoteInnovation" onmouseover="hoverOnQuote()" onmouseout="dishoverOnQuote()">
+            "Don't be afraid to experiment. That's where innovation happens."
+        </span>
+            <p class="Description">
+                Dreaming big amid the dynamic tech corridors of urban <span class="India">India</span>, I'm not simply weaving lines of code; I'm crafting dreams. While others count sheep, I count opportunities in my sleep. They say dream big or go home, but I've transformed my home into a shelter for binary dreams. So, if you see me staring at the screen, I'm not lost; I'm simply exploring the boundaries of possibility in this digital era.
+            </p>
+        </section>
         <section class="projects">
             <div class="projects-name">
                 <p>Projects</p>
@@ -61,4 +68,6 @@
             </div>
         </section>
     </body>
-  </html>
+
+    <script src="Profile.js"></script>
+</html>
