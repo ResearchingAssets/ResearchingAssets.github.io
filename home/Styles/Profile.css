@@ -305,7 +305,7 @@ p {
         font-size: 125%;
     }
 }
-
+ 
 @media (prefers-reduced-motion) {
     * {
         transition: none;
