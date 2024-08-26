@@ -185,6 +185,7 @@ p {
     background: var(--tri-gradient);
     background-clip: text;
     -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
 }
  ::-webkit-scrollbar {
         display: none;
