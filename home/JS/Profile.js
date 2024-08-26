@@ -1,6 +1,7 @@
 const FirstElement = document.querySelector('.name-design');
 const SecondElement = document.querySelector('.Hello');
-const ThirdElement = document.querySelector('.projects');
+const ThirdElement = document.querySelector('.quote');
+const FourthElement = document.querySelector('.projects');
 
 window.addEventListener('scroll', () => {
     const scrollPosition = window.scrollY;
@@ -18,12 +19,17 @@ window.addEventListener('scroll', () => {
       SecondElement.style.opacity = 1;
     }
 
-    if (scrollPosition < 800 | scrollPosition > 1600) {
+    if (scrollPosition < 1000 | scrollPosition > 1554) {
       ThirdElement.style.opacity = 0;
     } else {
       ThirdElement.style.opacity = 1;
     }
 
+    if (scrollPosition < 1555| scrollPosition > 2156) {
+      FourthElement.style.opacity = 0;
+    } else {
+      FourthElement.style.opacity = 1;
+    }
   });
 
   const rootElement = document.documentElement;
@@ -102,3 +108,31 @@ projectLink.forEach(link => {
     });
   });
 });
+
+const quoteLink= document.querySelectorAll(".quote-link");
+
+// Add an event listener to each link
+quoteLink.forEach(link => {
+  link.addEventListener("click", function(event) {
+    // Prevent the default link behavior
+    event.preventDefault();
+
+    // Get the element with the class of "projects"
+    const ProjectSection = document.querySelector(".quote");
+
+    // Scroll to the socials section
+    ProjectSection.scrollIntoView({
+      behavior: "smooth"
+    });
+  });
+});
+
+const show = document.querySelector('.Description')
+function hoverOnQuote(){
+  show.style.opacity = 1;
+}
+function dishoverOnQuote(){
+  show.style.opacity = 0;
+}
+
+
