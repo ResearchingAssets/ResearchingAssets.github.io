@@ -64,6 +64,9 @@ nav {
     align-items: center;
     z-index: 10;
     flex-direction: row;
+    background: rgba(255, 255, 255, .1);
+    backdrop-filter: blur(10px);
+    border-bottom: 2px solid rgba(255, 255, 255, .2);
 }
 .Name{
     text-decoration: none;
